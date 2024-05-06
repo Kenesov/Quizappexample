@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz app example</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="start">Start</string>
+    <string name="submit">Submit</string>
+    <string name="name_error">Name is required!</string>
+    <string name="continue_text">Continue</string>
+    <string name="finish_text">Finish</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="score_text">Your Score: %d/15</string>
+</resources>
