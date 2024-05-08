@@ -17,9 +17,7 @@
         >
         <ImageView
             android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            style="@style/toolbarbutton"
             app:layout_constraintTop_toTopOf="@id/toolbar_layout"
             app:layout_constraintBottom_toBottomOf="@id/toolbar_layout"
             app:layout_constraintStart_toStartOf="@id/toolbar_layout"
@@ -28,18 +26,16 @@
 
         <TextView
             android:id="@+id/count_question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:layout_marginStart="766dp"
+            style="@style/toolbarbutton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/toolbar_layout"
             app:layout_constraintBottom_toBottomOf="@id/toolbar_layout"
             android:textColor="@color/black"
-            android:text="1/15"
+            android:text="@string/question_counter"
             android:textSize="24dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
 
 
 
@@ -75,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:text="Bul praekten islew maqsetim "
+                android:text="@string/text_question"
                 android:textSize="18dp" />
 
         </androidx.cardview.widget.CardView>
@@ -86,87 +82,51 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_1"
         android:layout_width="match_parent"
-        android:text="Xalqabad"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:layout_height="wrap_content"
+        style="@style/optionbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_2"
         app:layout_constraintTop_toBottomOf="@id/first_layout"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:elevation="16dp"
-        android:backgroundTint="@color/white"
         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_2"
         android:layout_width="match_parent"
-        android:text="Shimbay"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:layout_height="wrap_content"
+        style="@style/optionbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_1"
         app:layout_constraintBottom_toTopOf="@id/btn_3"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/white"
-        android:elevation="16dp"
         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_3"
         android:layout_width="match_parent"
-        android:text="America"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:layout_height="wrap_content"
+        style="@style/optionbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_2"
         app:layout_constraintBottom_toTopOf="@id/btn_4"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/white"
-        android:elevation="16dp"
+
         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_4"
         android:layout_width="match_parent"
-        android:text="Almaty"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:layout_height="wrap_content"
+        style="@style/optionbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_3"
         app:layout_constraintBottom_toTopOf="@id/btn_next"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/white"
-        android:elevation="16dp"
         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_next"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
+        style="@style/submitbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_4"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="#332F2F"
-        android:text="Next"
-        android:textColor="@color/white"
-        android:layout_marginTop="14dp"
-        android:textSize="22dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

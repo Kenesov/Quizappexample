@@ -6,4 +6,41 @@
     </style>
 
     <style name="Theme.QuizAppExample" parent="Base.Theme.QuizAppExample" />
+    
+    <style name="optionbutton" parent="commonbutton">
+
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:text">Android studio</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="submitbutton" parent="commonbutton">
+
+        <item name="android:layout_height">54dp</item>
+        <item name="backgroundTint">#332F2F</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:text">Next</item>
+        <item name="android:letterSpacing">0.3</item>
+    </style>
+    
+    <style name="commonbutton" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="elevation">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+
+    </style>
+
+    <style name="toolbarbutton" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">12dp</item>
+
+    </style>
 </resources>

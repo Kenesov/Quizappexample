@@ -1,10 +1,12 @@
 package uz.datalife.quizappexample.ui
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
 import uz.datalife.quizappexample.R
+import uz.datalife.quizappexample.data.Constants
 import uz.datalife.quizappexample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPreferences = getSharedPreferences(Constants.PREFS_NAME, Context.MODE_PRIVATE)
 
         binding.apply {
             etName.addTextChangedListener {
@@ -22,15 +25,20 @@ class MainActivity : AppCompatActivity() {
 
             btnStart.setOnClickListener {
                 val name = etName.text.toString()
-                if (name.isEmpty()) {
+
+                if (name.isEmpty() || name.isBlank()) {
                     tilName.error = getString(R.string.name_error)
                 } else {
+                    sharedPreferences.edit().putString("name", name).apply()
                     val intent = Intent(this@MainActivity, GameActivity::class.java)
-                    intent.putExtra("name", name)
                     startActivity(intent)
                     finish()
                 }
             }
         }
+    }
+
+    private fun getName(): String {
+        return binding.etName.text.toString()
     }
 }

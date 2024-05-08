@@ -10,4 +10,7 @@
     <string name="finish_text">Finish</string>
     <string name="congratulations">Congratulations</string>
     <string name="score_text">Your Score: %d/15</string>
+    <string name="text_question">Bul praekten islew maqsetim</string>
+    <string name="question_counter">%d / %d</string>
+    <string name="result_text"><b>%s</b> Siz <b>%d</b> sorawdan <b>%d</b> sorawına durıs juwap bere aldınız!</string>
 </resources>

@@ -6,4 +6,5 @@
     <color name="selected_color">#E19B34</color>
     <color name="correct_color">#5CBF61</color>
     <color name="wrong_color">#D65858</color>
+    <color name="tranparent_color">#00FF0000</color>
 </resources>
